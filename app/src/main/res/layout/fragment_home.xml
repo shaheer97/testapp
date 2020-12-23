@@ -36,7 +36,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="News"
+            android:text="@string/news"
             app:layout_constraintHeight_percent="0.2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingTop="25dp"
-            android:text="Payment History"
+            android:text="@string/payment_history"
             app:layout_constraintTop_toBottomOf="@+id/layout2" />
 
 
@@ -74,7 +74,7 @@
             android:id="@+id/text_view3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Government"
+            android:text="@string/government"
             app:layout_constraintTop_toBottomOf="@+id/layout3" />
 
 
@@ -107,7 +107,7 @@
                 android:layout_height="31dp"
                 android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
-                android:text="Working with government"
+                android:text="@string/working_with_government"
                 android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +132,7 @@
                 android:layout_height="34dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="Vehicle and Transport"
+                android:text="@string/vehicle_and_transport"
                 android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -156,7 +156,7 @@
                 android:layout_height="34dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="Housing and Property"
+                android:text="@string/housing_and_property"
                 android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -177,7 +177,7 @@
             <TextView
                 android:layout_width="69dp"
                 android:layout_height="34dp"
-                android:text="Media"
+                android:text="@string/media"
                 android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -202,7 +202,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Other Services"
+            android:text="@string/other_services"
             app:layout_constraintTop_toBottomOf="@id/layout4" />
 
 
@@ -225,7 +225,7 @@
             android:layout_height="31dp"
             android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
-            android:text="Utility and bills"
+            android:text="@string/utility_and_bills"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -250,7 +250,7 @@
             android:layout_height="34dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:text="Sharjah 24 News"
+            android:text="@string/sharjah_24_news"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/text_View2"
@@ -274,7 +274,7 @@
             android:layout_height="34dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:text="Medicine App"
+            android:text="@string/medicine_app"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/text_View3"
@@ -295,7 +295,7 @@
         <TextView
             android:layout_width="69dp"
             android:layout_height="34dp"
-            android:text="Sharjah library"
+            android:text="@string/sharjah_library"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

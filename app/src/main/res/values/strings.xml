@@ -6,4 +6,26 @@
     <string name="History">History</string>
     <string name="Profile">Profile</string>
     <string name="Setting">Setting</string>
+    <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique ex vel quam feugiat iaculis. Nunc vel molestie libero, vitae feugiat est. Aenean in sodales risus, ut viverra lacus.</string>
+    <string name="today_news">today news</string>
+    <string name="sharjah_library">Sharjah library</string>
+    <string name="medicine_app">Medicine App</string>
+    <string name="sharjah_24_news">Sharjah 24 News</string>
+    <string name="utility_and_bills">Utility and bills</string>
+    <string name="other_services">Other Services</string>
+    <string name="media">Media</string>
+    <string name="housing_and_property">Housing and Property</string>
+    <string name="vehicle_and_transport">Vehicle and Transport</string>
+    <string name="working_with_government">Working with government</string>
+    <string name="government">Government</string>
+    <string name="payment_history">Payment History</string>
+    <string name="news">News</string>
+    <string name="profile">Profile</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="help">Help</string>
+    <string name="search">Search</string>
+    <string name="history1">History</string>
+    <string name="home1">Home</string>
+    <string name="profile1">Profile</string>
+    <string name="setting1">Setting</string>
 </resources>
