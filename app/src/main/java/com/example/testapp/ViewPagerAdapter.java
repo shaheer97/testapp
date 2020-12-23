@@ -1,18 +1,16 @@
 package com.example.testapp;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-    private final List<Fragment> fragmentList= new ArrayList<>();
-    private final List<String> FragmentsListTitles=new ArrayList<>();
+    private final List<Fragment> fragmentList = new ArrayList<>();
+    private final List<String> FragmentsListTitles = new ArrayList<>();
 
     public ViewPagerAdapter(@NonNull FragmentManager fm) {
         super(fm);
@@ -29,13 +27,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         return FragmentsListTitles.size();
     }
 
-
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
         return FragmentsListTitles.get(position);
     }
-    public void AddFragment(Fragment fragment,String Title){
+
+    public void AddFragment(Fragment fragment, String Title) {
         fragmentList.add(fragment);
         FragmentsListTitles.add(Title);
     }

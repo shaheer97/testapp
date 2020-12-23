@@ -6,58 +6,46 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-      android:layout_marginTop="55dp"
         android:id="@+id/first_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="News"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/news"
             app:layout_constraintHeight_percent="0.2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
-  
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/bg1">
-
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/test"
-                tools:layout_editor_absoluteX="48dp"
-                tools:layout_editor_absoluteY="34dp" />
-        </androidx.cardview.widget.CardView>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-      android:id="@+id/layout2"
+        android:id="@+id/layout2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.2"
@@ -68,31 +56,10 @@
             android:id="@+id/text_view2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Payment History"
-            app:layout_constraintTop_toBottomOf="@+id/layout2"
-            />
+            android:paddingTop="25dp"
+            android:text="@string/payment_history"
+            app:layout_constraintTop_toBottomOf="@+id/layout2" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="0dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/bg1">
-
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/tes1"/>
-        </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -101,19 +68,18 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.2"
-        app:layout_constraintTop_toBottomOf="@+id/layout2"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/layout2">
 
         <TextView
             android:id="@+id/text_view3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Government"
-            app:layout_constraintTop_toBottomOf="@+id/layout3"/>
+            android:text="@string/government"
+            app:layout_constraintTop_toBottomOf="@+id/layout3" />
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-android:id="@+id/gov_layout"
+            android:id="@+id/gov_layout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -128,12 +94,12 @@ android:id="@+id/gov_layout"
                 android:layout_height="60dp"
                 android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
-                app:srcCompat="@drawable/ic_baseline_account_balance_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHeight_percent="0.25"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.244" />
+                app:layout_constraintVertical_bias="0.244"
+                app:srcCompat="@drawable/ic_baseline_account_balance_24" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -141,7 +107,7 @@ android:id="@+id/gov_layout"
                 android:layout_height="31dp"
                 android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
-                android:text="Working with government"
+                android:text="@string/working_with_government"
                 android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -152,12 +118,12 @@ android:id="@+id/gov_layout"
                 android:id="@+id/imageView"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                app:srcCompat="@drawable/ic_baseline_drive_eta_24"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="24dp"
                 app:layout_constraintStart_toEndOf="@+id/image1"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_drive_eta_24" />
 
 
             <TextView
@@ -166,7 +132,7 @@ android:id="@+id/gov_layout"
                 android:layout_height="34dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="Vehicle and Transport"
+                android:text="@string/vehicle_and_transport"
                 android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -177,12 +143,12 @@ android:id="@+id/gov_layout"
                 android:id="@+id/imageView2"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                app:srcCompat="@drawable/ic_baseline_apartment_24"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="24dp"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_apartment_24" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -190,7 +156,7 @@ android:id="@+id/gov_layout"
                 android:layout_height="34dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="Housing and Property"
+                android:text="@string/housing_and_property"
                 android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -201,17 +167,17 @@ android:id="@+id/gov_layout"
                 android:id="@+id/imageView3"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                app:srcCompat="@drawable/ic_baseline_perm_media_24"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="24dp"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_perm_media_24" />
 
             <TextView
                 android:layout_width="69dp"
                 android:layout_height="34dp"
-                android:text="Media"
+                android:text="@string/media"
                 android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -231,27 +197,27 @@ android:id="@+id/gov_layout"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.2"
         app:layout_constraintTop_toBottomOf="@+id/layout3"
-        tools:layout_editor_absoluteX="0dp" >
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Other Services"
-            app:layout_constraintTop_toBottomOf="@id/layout4"/>
+            android:text="@string/other_services"
+            app:layout_constraintTop_toBottomOf="@id/layout4" />
 
 
         <ImageView
             android:id="@+id/image_1"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            app:srcCompat="@drawable/ic_baseline_emoji_events_24"
             android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHeight_percent="0.25"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.244" />
+            app:layout_constraintVertical_bias="0.244"
+            app:srcCompat="@drawable/ic_baseline_emoji_events_24" />
 
         <TextView
             android:id="@+id/text_View2"
@@ -259,7 +225,7 @@ android:id="@+id/gov_layout"
             android:layout_height="31dp"
             android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
-            android:text="Utility and bills"
+            android:text="@string/utility_and_bills"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -270,12 +236,12 @@ android:id="@+id/gov_layout"
             android:id="@+id/image_View"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            app:srcCompat="@drawable/ic_baseline_border_all_24"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="24dp"
             app:layout_constraintStart_toEndOf="@+id/image_1"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_border_all_24" />
 
 
         <TextView
@@ -284,7 +250,7 @@ android:id="@+id/gov_layout"
             android:layout_height="34dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:text="Sharjah 24 News"
+            android:text="@string/sharjah_24_news"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/text_View2"
@@ -295,12 +261,12 @@ android:id="@+id/gov_layout"
             android:id="@+id/image_View2"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            app:srcCompat="@drawable/ic_baseline_house_24"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="24dp"
             app:layout_constraintStart_toEndOf="@+id/image_View"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_house_24" />
 
         <TextView
             android:id="@+id/text_View4"
@@ -308,7 +274,7 @@ android:id="@+id/gov_layout"
             android:layout_height="34dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:text="Medicine App"
+            android:text="@string/medicine_app"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/text_View3"
@@ -319,17 +285,17 @@ android:id="@+id/gov_layout"
             android:id="@+id/imageView4"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            app:srcCompat="@drawable/ic_baseline_ac_unit_24"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="24dp"
             app:layout_constraintStart_toEndOf="@+id/image_View2"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_ac_unit_24" />
 
         <TextView
             android:layout_width="69dp"
             android:layout_height="34dp"
-            android:text="Sharjah library"
+            android:text="@string/sharjah_library"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
